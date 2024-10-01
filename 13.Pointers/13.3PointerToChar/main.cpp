@@ -1,12 +1,12 @@
 #include <iostream>
 
 
-int main(){
-
+int main()
+{
     const char * message {"Hello World!"};
     std::cout << "message : " << message << std::endl;
 
-    //*message = "B"; // Compiler error
+    //*message = "B"; // Compiler error since cannot modify
     std::cout << "*message : " << *message << std::endl;
 
     //Allow users to modify the string
