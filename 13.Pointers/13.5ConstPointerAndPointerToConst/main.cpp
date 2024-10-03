@@ -22,7 +22,6 @@ int main(){
     */
 
 
-
 	//Pointer : Can modify the data and the pointer itself
     /*
     int *p_number1 {nullptr};
@@ -54,8 +53,6 @@ int main(){
     std::cout << std::endl;
     */
 
-
-
     //Pointer to const
 	//Pointer pointing to constant data : You can't modify the data through pointer
     /*
@@ -86,8 +83,6 @@ int main(){
     
     std::cout << std::endl; 
     */
-
-
 
 	//const keyword applies to the variable name.
     /*
@@ -135,31 +130,23 @@ int main(){
 	std::cout << std::endl;
     */
 
-
 	//Pointer is constant (can't make it point anywere else)
 	//but pointed to value can change
     std::cout << "Pointer is contant, pointed to value can change : " << std::endl;
     int number7 {982};
-    
+
     int * const p_number7 { &number7};
-    
+
     std::cout << "p_number7 :" << p_number7 << std::endl;
     std::cout << "*p_number7 : " << *p_number7 << std::endl;
     std::cout << "Changing value pointed to through p_number7 pointer : " << std::endl;
-    
+
     *p_number7 = 456;
     std::cout << "The value pointed to by p_number7 now is : " << *p_number7 << std::endl;
-    
+
     int number8 {2928};
     std::cout << "Changing the address where p_number7 is pointing (Compile Error)." << std::endl;
     //p_number7 = &number8;
-    
-	
 
-
-
-
-	
-   
     return 0;
 }

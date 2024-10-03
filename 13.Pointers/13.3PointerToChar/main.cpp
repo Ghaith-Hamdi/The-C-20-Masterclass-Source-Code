@@ -9,6 +9,7 @@ int main()
     //*message = "B"; // Compiler error since cannot modify
     std::cout << "*message : " << *message << std::endl;
 
+
     //Allow users to modify the string
     char message1[] {"Hello World!"};
     message1[0] = 'B';
